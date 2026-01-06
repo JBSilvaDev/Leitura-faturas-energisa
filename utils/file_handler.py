@@ -1,7 +1,7 @@
 import os
 import shutil
 from pathlib import Path
-import config
+import config.config as config
 
 def mover_arquivo(arquivo, status):
     """

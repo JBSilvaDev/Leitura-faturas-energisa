@@ -1,7 +1,7 @@
 import pandas as pd
 from pathlib import Path
 
-import config
+import config.config as config
 from utils.file_handler import listar_arquivos_pendentes, mover_arquivo
 from utils.pdf_extractor import extract_text_from_pdf
 from model.invoice_parser import parse_invoice

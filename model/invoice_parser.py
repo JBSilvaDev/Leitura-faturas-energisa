@@ -1,5 +1,5 @@
 import re
-import config
+import config.config as config
 
 def extract_field(field_key, text):
     """
