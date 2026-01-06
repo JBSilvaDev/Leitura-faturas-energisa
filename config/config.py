@@ -2,7 +2,7 @@ from pathlib import Path
 import os
 
 # Obtém o caminho absoluto para o diretório do projeto
-CAMINHO_RAIZ = Path(__file__).parent.resolve()
+CAMINHO_RAIZ = Path(os.getcwd())
 
 # Define os caminhos para as pastas
 PASTA_PENDENTES = CAMINHO_RAIZ / "faturas_pendentes"
