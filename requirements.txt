@@ -13,4 +13,3 @@ pypdfium2==4.30.0
 pytz==2025.2
 shutill==3.1
 tzdata==2025.2
-ipykernel
