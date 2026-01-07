@@ -42,6 +42,7 @@ def parse_invoice(text):
         "emissao": extract_field("emis", full_text),
         "valor_total": extract_field("val", full_text),
         "nota_fiscal": extract_field("nf", full_text),
-        "cod_barras": extract_field("cb", full_text)
+        "cod_barras": extract_field("cb", full_text),
+        "endereco": extract_field("end", full_text)
     }
     return invoice_data

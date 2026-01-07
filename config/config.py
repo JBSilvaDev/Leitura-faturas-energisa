@@ -35,4 +35,8 @@ REGEX = {
         r"(\d{5}\.\d{5}\s\d{5}\.\d{6}\s\d{5}\.\d{6}\s\d\s\d{14})",
     ],
     "val": [r"R\$ (\d{1,3},\d{2})"],
+    "end": [
+        r"(?im)\b(?:RUA|TRAVESSA|ALAMEDA|RODOVIA)\b[^\n]*?(?=\s*CEP\s*\d{5}-?\d{3})",
+        r"(?im)^(?:FAZENDA|SÍTIO|CHÁCARA|TRAVESSA|ALAMEDA|RODOVIA)\b.*$",
+        ],
 }
