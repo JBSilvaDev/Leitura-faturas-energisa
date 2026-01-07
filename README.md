@@ -12,6 +12,7 @@ Este projeto em Python foi desenvolvido para automatizar a leitura de dados de f
   - Valor Total a Pagar
   - Número da Nota Fiscal
   - Código de Barras
+  - Endereço
 - **Organização de Arquivos**: Move os arquivos PDF processados para pastas distintas, separando os que foram lidos com sucesso daqueles que apresentaram algum erro na extração.
 - **Exportação para Excel**: Salva todos os dados extraídos em um arquivo `faturas.xlsx` para fácil visualização e análise.
 
@@ -49,38 +50,39 @@ Leitura-faturas-energisa/
 
 ## Instalação
 
-1.  **Clone o repositório:**
-    ```bash
-    git clone https://github.com/seu-usuario/Leitura-faturas-energisa.git
-    cd Leitura-faturas-energisa
-    ```
+1. **Clone o repositório:**
 
-2.  **Crie e ative um ambiente virtual (recomendado):**
-    ```bash
-    python -m venv venv
-    # No Windows
-    venv\Scripts\activate
-    # No macOS/Linux
-    source venv/bin/activate
-    ```
+   ```bash
+   git clone https://github.com/seu-usuario/Leitura-faturas-energisa.git
+   cd Leitura-faturas-energisa
+   ```
+2. **Crie e ative um ambiente virtual (recomendado):**
 
-3.  **Instale as dependências:**
-    ```bash
-    pip install -r requirements.txt
-    ```
+   ```bash
+   python -m venv venv
+   # No Windows
+   venv\Scripts\activate
+   # No macOS/Linux
+   source venv/bin/activate
+   ```
+3. **Instale as dependências:**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Como Usar
 
-1.  **Adicione as Faturas**: Coloque todos os arquivos PDF das faturas que você deseja processar dentro da pasta `faturas_pendentes`.
+1. **Adicione as Faturas**: Coloque todos os arquivos PDF das faturas que você deseja processar dentro da pasta `faturas_pendentes`.
+2. **Execute o Script**: Abra o terminal na raiz do projeto e execute o seguinte comando:
 
-2.  **Execute o Script**: Abra o terminal na raiz do projeto e execute o seguinte comando:
-    ```bash
-    python main.py
-    ```
+   ```bash
+   python main.py
+   ```
+3. **Verifique os Resultados**:
 
-3.  **Verifique os Resultados**:
-    - Os dados extraídos estarão disponíveis no arquivo `faturas.xlsx`.
-    - Os PDFs originais serão movidos para a pasta `faturas_sucesso` se a leitura for bem-sucedida, ou para a pasta `faturas_erro` caso contrário.
+   - Os dados extraídos estarão disponíveis no arquivo `faturas.xlsx`.
+   - Os PDFs originais serão movidos para a pasta `faturas_sucesso` se a leitura for bem-sucedida, ou para a pasta `faturas_erro` caso contrário.
 
 ## Dependências
 
